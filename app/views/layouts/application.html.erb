@@ -4,7 +4,7 @@
     <title>CloneWithPicTask</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'bootstrap_override', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -28,6 +28,7 @@
               <li><%= link_to "Profile", user_path(current_user.id) %></li>
               <li><%= link_to "Logout", session_path(current_user.id), method: :delete %></li>
               <li><%= link_to "Index", pictures_path %></li>
+              <li><%= link_to 'New Picture', new_picture_path %></li>
             <% else %>
               <li><%= link_to "Sign up", new_user_path %></li>
               <li><%= link_to "Login", new_session_path %></li>
