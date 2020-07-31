@@ -25,8 +25,16 @@ html {
   background-size: cover;
 }
 
-.top_text {
+.container {
+  min-height: 80vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.top_text {
+  font-weight: bold;
+  font-size: 4rem;
 }
 
 .wrapper {
@@ -34,6 +42,10 @@ html {
   position: relative;
   padding-bottom: 50px;
   box-sizing: border-box;
+}
+
+.navbar {
+  border-radius: 0px;
 }
 
 .footer {
