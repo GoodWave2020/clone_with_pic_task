@@ -1,3 +1,7 @@
 #picture_image {
   margin: 0 auto;
 }
+
+#session_email, #session_password {
+  margin-bottom: 2rem;
+}
