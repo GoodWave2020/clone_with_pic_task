@@ -5,3 +5,13 @@
 #session_email, #session_password {
   margin-bottom: 2rem;
 }
+
+.user_post {
+  display:block;
+  text-align: center;
+}
+
+.user_post .post_contents {
+  display: inline-block;
+  text-align: left;
+}

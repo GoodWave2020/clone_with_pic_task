@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 <h1 class="text-center">Pictures</h1>
 <% @pictures.each do |picture| %>
-  <div class="text-center">
-  <%= picture.user.name %><br>
-  <%= image_tag picture.image.url %><br>
-  <%= picture.content %><br>
-  <%= link_to 'Show', picture %>
-  <%= link_to 'Edit', edit_picture_path(picture) %>
-  <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div class="user_post">
+    <p class="post_contents"><%= picture.user.name %><br>
+    <%= image_tag picture.image.url %><br>
+    <%= picture.content %><br>
+      <%= link_to 'Show', picture %>
+      <%= link_to 'Edit', edit_picture_path(picture) %>
+      <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <p>
   </div>
 <% end %>
