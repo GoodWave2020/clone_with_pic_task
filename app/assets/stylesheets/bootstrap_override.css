@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 #picture_image {
   margin: 0 auto;
 }
@@ -22,4 +26,25 @@
 }
 
 .top_text {
+
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.footer {
+  height:50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #e7e7e7;
+}
+
+.header_text {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
 }
