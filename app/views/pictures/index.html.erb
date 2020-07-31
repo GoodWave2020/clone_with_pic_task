@@ -1,9 +1,8 @@
-<p id="notice"><%= notice %></p>
 <h1 class="text-center">Pictures</h1>
 <% @pictures.each do |picture| %>
   <div class="user_post">
     <p class="post_contents"><%= picture.user.name %><br>
-    <%= image_tag picture.image.url %><br>
+    <%= image_tag picture.image.url if picture.image.url %><br>
     <%= picture.content %><br>
       <%= link_to 'Show', picture %>
       <%= link_to 'Edit', edit_picture_path(picture) %>
