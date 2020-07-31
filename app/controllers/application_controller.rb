@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   def check_user
     if @current_user != @user
-      flash[:notice] = t("you can't destroy or edit other user's pictures")
+      flash[:notice] = "you can't destroy or edit other user's pictures"
       redirect_to pictures_path
     end
   end
