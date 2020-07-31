@@ -5,8 +5,8 @@
     <%= image_tag picture.image.url if picture.image.url %><br>
     <%= picture.content %><br>
       <%= link_to 'Show', picture %>
-      <%= link_to 'Edit', edit_picture_path(picture) %>
-      <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Edit', edit_picture_path(picture) if @current_user == picture.user %>
+      <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } if @current_user == picture.user%>
     <p>
   </div>
 <% end %>
