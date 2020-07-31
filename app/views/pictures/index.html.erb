@@ -1,7 +1,7 @@
 <h1 class="text-center">Pictures</h1>
 <% @pictures.each do |picture| %>
-  <div class="user_post">
-    <p class="post_contents"><%= picture.user.name %><br>
+  <div class="user_post panel panel-default">
+    <p class="post_contents panel-body"><%= picture.user.name %><br>
     <%= image_tag picture.image.url if picture.image.url %><br>
     <%= picture.content %><br>
       <%= link_to 'Show', picture %>
