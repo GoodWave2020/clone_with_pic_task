@@ -25,7 +25,7 @@ html {
   background-size: cover;
 }
 
-.container {
+#top_wrapper {
   min-height: 80vh;
   display:flex;
   align-items: center;
